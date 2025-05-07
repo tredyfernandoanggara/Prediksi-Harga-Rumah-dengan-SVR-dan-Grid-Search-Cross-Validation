@@ -19,3 +19,12 @@ def bar_plot(x, y, hue=None, title=None):
     # Layout
     plt.tight_layout()
     plt.show()
+
+# Regresi Plot
+def reg_plot(data, x, y, title=None):
+    sns.regplot(data=data, x=x, y=y)
+
+    plt.title(title)
+    plt.grid()
+    plt.tight_layout()
+    plt.show()
