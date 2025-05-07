@@ -7,7 +7,7 @@ def bar_plot(x, y, hue=None, title=None):
     
     for p in ax.patches:
         # Mendapatkan teks
-        text = int(p.get_height())
+        text = p.get_height()
         
         if p.xy != (0, 0):
             # Annotate text
